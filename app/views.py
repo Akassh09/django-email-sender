@@ -8,8 +8,8 @@ def subscribe(request):
     sub = forms.subscribe()
     if request.method =='POST':
         sub = forms.subscribe(request.POST)
-        subject = "Welcome!!"
-        message = "Hey buddy, Thanks for joining our Community"
+        subject = "Hii "+str(sub['Name'].value())
+        message = "Welcome. Thanks for joining our Community"
         recepient = str(sub['Email'].value())     
 
 
